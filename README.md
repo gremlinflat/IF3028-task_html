@@ -1,4 +1,4 @@
-# IF3028-task_html
+# IF3028 Pemrograman Web task Repository
 
 Nama  : Fahri Novaldi
 NIM   : 119140205
