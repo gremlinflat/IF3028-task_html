@@ -57,6 +57,7 @@ label {
 }
 
 .kirim{
+    margin-top: 16px;
     display: block;
     width: 100%;
     padding: 1rem;

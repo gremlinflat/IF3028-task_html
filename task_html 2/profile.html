@@ -50,7 +50,7 @@
       let prodi = document.getElementById("prodi");
       
       const query_string = new URLSearchParams(window.location.search);
-      
+      profile_pict.src = query_string.get("photo");
       nama.innerHTML = query_string.get("nama");
 
       let tanggal_lahir_raw = new Date (query_string.get("tanggallahir"));
@@ -61,5 +61,6 @@
       gender.innerHTML = query_string.get("gender");
       goldar.innerHTML = query_string.get("goldar");
       prodi.innerHTML = query_string.get("prodi");
+
   </script>
 </html>
