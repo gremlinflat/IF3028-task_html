@@ -1,3 +1,17 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    color: rgba(107,114,128,1);
+    font-weight: 700;
+}
+
 #background {
     display: flex;
     min-height: 100vh;
@@ -23,22 +37,9 @@
     color: rgba(31,41,55,1);
 }
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-body {
-    margin: 0;
-}
 .field {
     /*ini biar ada spacingnya antara text field ^nyontek dri stackoverflow */
     margin-top: 16px;
-}
-
-label {
-    display: block;
-    margin-bottom: .5rem;
-    color: rgba(107,114,128,1);
-    font-weight: 700;
 }
 
 .textform {
@@ -76,6 +77,7 @@ label {
     background-color: rgba(252,211,77,1);
     color: rgba(146,64,14,1);
 }
+
 
 .profile-pict{
     border-radius: 100%;
