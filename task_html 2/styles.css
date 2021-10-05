@@ -1,0 +1,55 @@
+#background {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(96,165,250,1);
+    justify-content: center;
+    align-items: center;
+
+}
+#form-bg {
+    background-color: rgba(255,255,255,1);
+    padding: 4rem;
+    border-radius: .25rem;
+    box-shadow: 0 0 #0000, 0 0 #0000,0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 66.67%;
+}
+
+#header{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: rgba(31,41,55,1);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field {
+    /*ini biar ada spacingnya antara text field ^nyontek dri stackoverflow */
+    margin-top: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    color: rgba(107,114,128,1);
+    font-weight: 700;
+}
+
+.textform {
+    width: 100%;
+    outline: 2px solid transparent;
+    padding: .75rem;
+    border-width: 2px;
+    border-color: rgba(229, 231, 235, 1);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    border-style: solid;
+}
+
+.textform:focus{
+    border-color: rgba(139,92,246,1)
+}
+
