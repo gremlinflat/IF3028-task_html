@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile - Fahri Novaldi</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="background">
+      <div id="form-bg">
+
+        <h2 id="header">Form Registrasi</h2>
+
+        <form id="forms" action="profile.html" method="post">
+            <div class="field">
+                <label for="name">Nama Lengkap</label>
+                <input class="textform" type="text" name="" id="name">
+            </div>
+            <div class="field">
+                <label>Tempat Lahir</label>
+                <input class="textform" type="text" name="" id="">
+            </div>
+            <div class="field">
+                <label>Tanggal Lahir</label>
+                <input class="textform" type="date" name="" id="">
+            </div>
+            <div class="field">
+                <label>Jenis Kelamin</label>
+                <select class="textform" name="gender" id="gender">
+                    <option value="Male">Laki-laki</option>
+                    <option value="Female">Perempuan</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Golongan Darah</label>
+                <input class="textform" type="text" name="" id="">
+            </div>
+            <div class="field">
+                <label>Program Studi</label>
+                <input class="textform" type="text" name="" id="">
+            </div>
+            <div class="field">
+                <label class="field" for="photo">Foto</label>
+                <label class="textform">
+                    <input type='file'/>
+                </label>
+            </div>
+            <button class="kirim" type="submit" form="forms">Kirim!</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

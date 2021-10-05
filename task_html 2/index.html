@@ -13,21 +13,21 @@
 
         <h2 id="header">Form Registrasi</h2>
 
-        <form id="forms" action="" method="post">
+        <form id="forms" action="profile.html" method="get">
             <div class="field">
-                <label for="name">Nama Lengkap</label>
-                <input class="textform" type="text" name="" id="name">
+                <label for="nama">Nama Lengkap</label>
+                <input class="textform" type="text" name="nama" id="nama">
             </div>
             <div class="field">
-                <label>Tempat Lahir</label>
-                <input class="textform" type="text" name="" id="">
+                <label for="tempat">Tempat Lahir</label>
+                <input class="textform" type="text" name="tempat" id="tempat">
             </div>
             <div class="field">
-                <label>Tanggal Lahir</label>
-                <input class="textform" type="date" name="" id="">
+                <label for="tanggallahir">Tanggal Lahir</label>
+                <input class="textform" type="date" name="tanggallahir" id="tanggallahir">
             </div>
             <div class="field">
-                <label>Jenis Kelamin</label>
+                <label for="">Jenis Kelamin</label>
                 <select class="textform" name="gender" id="gender">
                     <option value="Male">Laki-laki</option>
                     <option value="Female">Perempuan</option>
@@ -42,12 +42,12 @@
                 <input class="textform" type="text" name="" id="">
             </div>
             <div class="field">
-                <label class="block mb-2 font-bold text-gray-500" for="photo">Foto</label>
-                <label class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-50">
-                    <input type='file' />
+                <label class="field" for="photo">Foto</label>
+                <label class="textform">
+                    <input type='file'/>
                 </label>
             </div>
-            <button class="block w-full bg-yellow-400 hover:bg-yellow-300 p-4 rounded text-yellow-900 hover:text-yellow-800 transition duration-300 font-bold" type="submit" form="forms">Kirim!</button>
+            <input class="kirim" type="submit" value="Kirim!">
         </form>
       </div>
     </div>
