@@ -14,31 +14,48 @@
 
         <h2 id="header">Biodata Pendaftar</h2>
         <div class="profile-table">
-            <img class="profile-pict" src="src/images/profile-dummy.jpg" alt="Foto Profil">
+            <img class="profile-pict" src="src/images/profile-dummy.jpg" alt="Foto Profil" id="photo-profile">
             <div class="profile-data">
                 <div >
                     <span class="bio-label">Nama Lengkap : </span>
-                    <span>nama_dummy</span>
+                    <span id="nama">nama_dummy</span>
                 </div>
                 <div >
                     <span class="bio-label">Tempat, Tanggal Lahir : </span>
-                    <span>TTL_dummy</span>
+                    <span id="ttl">TTL_dummy</span>
                 </div>
                 <div >
                     <span class="bio-label">Jenis Kelamin : </span>
-                    <span>gender_dummy</span>
+                    <span id="gender">gender_dummy</span>
                 </div>
                 <div >
                     <span class="bio-label">Golongan Darah : </span>
-                    <span>goldar_dummy</span>
+                    <span id="goldar">goldar_dummy</span>
                 </div>
                 <div >
                     <span class="bio-label">Program Studi : </span>
-                    <span>prodi_dummy</span>
+                    <span id="prodi">prodi_dummy</span>
                 </div>
             </div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+      let profile_pict = document.getElementById("photo-profile");
+      let nama = document.getElementById("nama");
+      let TTL = document.getElementById("ttl");
+      let gender = document.getElementById("gender");
+      let goldar = document.getElementById("goldar");
+      let prodi = document.getElementById("prodi");
+      
+      const query_string = new URLSearchParams(window.location.search);
+      
+      nama.innerHTML = query_string.get("nama");
+      let tanggal_lahir = new Date (query_string.get("tanggallahir"));
+      TTL.innerHTML = query_string.get("tempat") + ", " + tanggal_lahir.getDate() + " " + tanggal_lahir.getMonth() +" " + tanggal_lahir.getFullYear();
+      gender.innerHTML = query_string.get("gender");
+      goldar.innerHTML = query_string.get("goldar");
+      prodi.innerHTML = query_string.get("prodi");
+  </script>
 </html>
