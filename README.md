@@ -2,4 +2,4 @@
 
 Nama  : Fahri Novaldi
 NIM   : 119140205
-Kelas : Pemrograman Web RB
+Kelas : Pemrograman Web RA
