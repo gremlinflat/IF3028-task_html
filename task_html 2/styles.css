@@ -76,3 +76,28 @@ label {
     color: rgba(146,64,14,1);
 }
 
+.profile-pict{
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.profile-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.profile-data{
+    margin: 1rem 1rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bio-label{
+    margin-bottom: .5rem;
+    color: rgb(15, 43, 100);
+    font-weight: 900;
+}

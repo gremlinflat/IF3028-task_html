@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile - Fahri Novaldi</title>
+    <title>Profile Page - Fahri Novaldi</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -12,44 +12,32 @@
     <div id="background">
       <div id="form-bg">
 
-        <h2 id="header">Form Registrasi</h2>
-
-        <form id="forms" action="profile.html" method="post">
-            <div class="field">
-                <label for="name">Nama Lengkap</label>
-                <input class="textform" type="text" name="" id="name">
+        <h2 id="header">Biodata Pendaftar</h2>
+        <div class="profile-table">
+            <img class="profile-pict" src="src/images/profile-dummy.jpg" alt="Foto Profil">
+            <div class="profile-data">
+                <div >
+                    <span class="bio-label">Nama Lengkap : </span>
+                    <span>nama_dummy</span>
+                </div>
+                <div >
+                    <span class="bio-label">Tempat, Tanggal Lahir : </span>
+                    <span>TTL_dummy</span>
+                </div>
+                <div >
+                    <span class="bio-label">Jenis Kelamin : </span>
+                    <span>gender_dummy</span>
+                </div>
+                <div >
+                    <span class="bio-label">Golongan Darah : </span>
+                    <span>goldar_dummy</span>
+                </div>
+                <div >
+                    <span class="bio-label">Program Studi : </span>
+                    <span>prodi_dummy</span>
+                </div>
             </div>
-            <div class="field">
-                <label>Tempat Lahir</label>
-                <input class="textform" type="text" name="" id="">
-            </div>
-            <div class="field">
-                <label>Tanggal Lahir</label>
-                <input class="textform" type="date" name="" id="">
-            </div>
-            <div class="field">
-                <label>Jenis Kelamin</label>
-                <select class="textform" name="gender" id="gender">
-                    <option value="Male">Laki-laki</option>
-                    <option value="Female">Perempuan</option>
-                </select>
-            </div>
-            <div class="field">
-                <label>Golongan Darah</label>
-                <input class="textform" type="text" name="" id="">
-            </div>
-            <div class="field">
-                <label>Program Studi</label>
-                <input class="textform" type="text" name="" id="">
-            </div>
-            <div class="field">
-                <label class="field" for="photo">Foto</label>
-                <label class="textform">
-                    <input type='file'/>
-                </label>
-            </div>
-            <button class="kirim" type="submit" form="forms">Kirim!</button>
-        </form>
+        </div>
       </div>
     </div>
   </body>
